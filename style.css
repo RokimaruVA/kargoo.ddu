@@ -1,0 +1,109 @@
+/* Add your custom styles here */
+
+body {
+  background: #c1bdba;
+  font-family: "Titillium Web", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #1ab188;
+  transition: 0.5s ease;
+}
+
+a:hover {
+  color: #13a180;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  background: rgba(19, 35, 47, 0.9);
+  /* padding: 40px; */
+  max-width: 60rem;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Используем flexbox */
+  justify-content: flex-start; /* Кнопки выравниваются к левой стороне */
+}
+
+.tab-group li {
+  flex: 1; /* Равномерно распределяем доступное пространство между кнопками */
+}
+
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  -webkit-appearance: none; /* Для WebKit браузеров */
+  appearance: none; /* Стандартное свойство */
+}
+
+.tab-group li a:hover {
+  background: #13a180;
+  color: #ffffff;
+}
+
+.tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+.tab-content {
+  padding: 2rem;
+  color: white;
+}
+
+.tab-content > div {
+  display: none;
+}
+
+.tab-content > div:first-child {
+  display: block;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #1ab188;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.button:hover,
+.button:focus {
+  background: #13a180;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}

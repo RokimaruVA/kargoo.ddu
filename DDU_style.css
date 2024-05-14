@@ -15,7 +15,8 @@
   --fw-b: 700;
 }
 body {
-  color: var(--accent-clr);
+  /* color: var(--accent-clr); */
+ background-color: rgb(243, 244, 230);
 }
 .row.header {
   display: none !important;
@@ -28,6 +29,10 @@ body {
 }
 .footer {
   display: none !important;
+}
+.content-wrapper{
+  /* width: 100% !important; */
+  background-color: rgb(243, 244, 230);
 }
 .content {
   width: 100%;
@@ -52,6 +57,7 @@ body {
   display: grid;
   padding: 14rem;
   justify-content: center;
+  color: rgb(112, 87, 114);
 }
 .general_content a {
   color: #000000;
@@ -61,17 +67,20 @@ body {
 .button-for-info {
   margin-inline: auto;
   width: fit-content;
+  padding: 0.2rem;
   /* display: grid; */
   justify-content: center;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073);
+  border: solid 0.1rem #3498db;
+  /* box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073); */
 }
 .box1 {
   width: 100%;
   /* height: 19rem; */
   display: grid;
   padding: 1rem;
-  background-color: white;
+  color: rgb(112, 87, 114);
+  background-color: rgb(234, 223, 208);
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073);
   border-radius: 2rem;
 }
@@ -97,17 +106,22 @@ body {
 .items_for_box2 {
   text-align: left;
   font-size: 1.7rem;
+  /* margin-bottom: 1.5rem;  */
+}
+.items_for_box2 p {
+  line-height: 2.8rem;
 }
 .paragraf-for-organization {
   font-size: 3rem;
-  font-weight: var(--fw-n);
+  /* font-weight: var(--fw-n); */
 }
 .box2 {
   width: 100%;
   /* height: 19rem; */
   display: grid;
   padding: 1rem;
-  background-color: white;
+  color: rgb(112, 87, 114);
+  background-color: rgb(234, 223, 208);
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073);
   border-radius: 2rem;
 }
@@ -126,10 +140,28 @@ body {
   width: auto;
   display: grid;
   place-items: center;
+  padding: 1rem;
+  text-align: left;
+  line-height: 2.8rem;
+  font-size: 1.7rem;
 }
-.items_for_singup1 {
+.items_for_singup1 pre {
+  white-space: pre-wrap;
+  padding: 1rem;
+  background-color: rgb(234, 223, 208);
+  font-family: "Open Sans", sans-serif;
+  color: rgb(112, 87, 114);
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+}
+
+/* .items_for_singup1 {
   text-align: right;
-}
+  line-height: 2.8rem;
+  font-size: 1.7rem;
+} */
 .youtube_tutorial {
   border-radius: 2rem;
 }
@@ -161,7 +193,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 1rem;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: rgb(234, 223, 208);
   border-radius: 2rem;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073);
   overflow: hidden; /* Добавлено здесь */
@@ -185,7 +217,7 @@ a:hover {
   display: block;
   text-decoration: none;
   padding: 1rem;
-  background: rgba(160, 179, 176, 0.25);
+  background: rgb(226, 205, 176);
   color: #000000;
   font-size: 20px;
   text-align: center;
@@ -197,12 +229,12 @@ a:hover {
 }
 
 .tab-group li a:hover {
-  background: #9b9b9b;
+  background: rgb(197, 165, 112);
   color: #ffffff;
 }
 
 .tab-group .active a {
-  background: #c5c5c5;
+  background: rgb(172, 139, 86);
   color: #ffffff;
 }
 .tab-content {
@@ -213,21 +245,31 @@ a:hover {
   gap: 1rem;
 }
 .tab-content > div:first-child {
-  order: 1; /* Первый столбец */
+  order: 1; 
 }
 
 .tab-content > div:last-child {
-  order: 2; /* Второй столбец */
+  order: 1; 
 }
 
 .tab-content > div {
   display: none;
 }
-
-.tab-content > div:first-child {
-  display: block;
+.tab-content img {
+  width: 100%;
+  height: 100%;
+  max-height: 12rem;
+  object-fit: cover;
 }
-
+.tab a {
+  height: 100%;
+}
+#tab1 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
 .button {
   border: 0;
   outline: none;
@@ -258,20 +300,7 @@ a:hover {
   margin-top: -1.5rem;
   text-align: right;
 }
-.tab-content img {
-  width: 100%;
-  height: 100%;
-  max-height: 12rem;
-  object-fit: cover;
-}
-.tab a {
-  height: 100%;
-}
-#tab1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem;
-}
+
 section {
   display: flex;
   flex-direction: column;
@@ -283,7 +312,7 @@ section {
   width: 100%;
   /* height: 19rem; */
   padding: 1rem;
-  background-color: white;
+  background-color: rgb(234, 223, 208);
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073);
   border-radius: 2rem;
 }
@@ -292,7 +321,7 @@ section {
   /* height: 19rem; */
   display: grid;
   padding: 1rem;
-  background-color: white;
+  background-color: rgb(234, 223, 208);
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073);
   border-radius: 2rem;
 }
@@ -313,4 +342,9 @@ section {
   flex-direction: column;
   align-items: end;
   text-align: end;
+}
+.Vacancies {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 1rem;
 }

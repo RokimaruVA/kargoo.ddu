@@ -14,9 +14,19 @@
   --fw-m: 500;
   --fw-b: 700;
 }
+.bold-text {
+  font-weight: 700;
+}
+.normal-text {
+  font-weight: 400;
+}
+.light-text {
+  font-weight: 300;
+}
+
 body {
   /* color: var(--accent-clr); */
- background-color: rgb(243, 244, 230);
+  background-color: rgb(243, 244, 230);
 }
 .row.header {
   display: none !important;
@@ -30,7 +40,7 @@ body {
 .footer {
   display: none !important;
 }
-.content-wrapper{
+.content-wrapper {
   /* width: 100% !important; */
   background-color: rgb(243, 244, 230);
 }
@@ -56,20 +66,24 @@ body {
 .general_content {
   display: grid;
   padding: 14rem;
+  text-align: center;
   justify-content: center;
+  align-items: center;
   color: rgb(112, 87, 114);
 }
 .general_content a {
   color: #000000;
+  align-items: center;
   border-radius: 1rem;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073);
 }
 .button-for-info {
   margin-inline: auto;
   width: fit-content;
-  padding: 0.2rem;
+  padding: 0.8rem;
   /* display: grid; */
   justify-content: center;
+  align-items: center;
   border-radius: 1rem;
   border: solid 0.1rem #3498db;
   /* box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073); */
@@ -87,8 +101,8 @@ body {
 
 .img-paragraf1 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 0.8rem;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
 }
 .items_for_box1 {
   width: auto;
@@ -104,6 +118,8 @@ body {
 }
 
 .items_for_box2 {
+  display: grid;
+  gap: 1rem;
   text-align: left;
   font-size: 1.7rem;
   /* margin-bottom: 1.5rem;  */
@@ -113,11 +129,11 @@ body {
 }
 .paragraf-for-organization {
   font-size: 3rem;
-  /* font-weight: var(--fw-n); */
+  font-weight: 700;
+  text-align: center;
 }
 .box2 {
   width: 100%;
-  /* height: 19rem; */
   display: grid;
   padding: 1rem;
   color: rgb(112, 87, 114);
@@ -127,14 +143,18 @@ body {
 }
 .img-paragraf2 {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 0.8rem;
 }
-.img-paragraf2 iframe {
-  width: 40rem;
+/* .img-paragraf2 iframe {
+  width: 100%;
   height: 22rem;
   left: 0px;
   top: 0px;
+} */
+.paragraf-for-Sign-up {
+  font-weight: 700;
+  text-align: center;
 }
 .items_for_singup1 {
   width: auto;
@@ -165,7 +185,23 @@ body {
 .youtube_tutorial {
   border-radius: 2rem;
 }
-
+.youtube-player {
+  position: relative;
+  padding-bottom: 56.25%; /* Соотношение сторон 16:9 */
+  height: 0;
+  border-radius: 2rem;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 .block1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -245,11 +281,11 @@ a:hover {
   gap: 1rem;
 }
 .tab-content > div:first-child {
-  order: 1; 
+  order: 1;
 }
 
 .tab-content > div:last-child {
-  order: 1; 
+  order: 1;
 }
 
 .tab-content > div {

@@ -301,11 +301,12 @@
                       <img src="img-for-kargoo/logo_light.svg" alt="logo_ddu">
                       Lorem ipsum dolor sit amet.
                     </div>
-                    <div>
-                      <button>language</button>
-                      <button>language</button>
-                      <button>language</button>
-                    </div>
+                    		<div class="switch-button">
+			<input type="checkbox" class="switch-button-checkbox" id="switch" />
+			<label class="switch-button-label" for="switch"
+				><span class="switch-button-label-span">Русский</span></label
+			>
+		</div>
                   </div>
                   <div class="general_content">
                     <div>
@@ -323,7 +324,8 @@
                       </h1>
                       <h2>намутить какой нибудь текст</h2>
                       <p>здесь текст о том что бы записаться</p>
-                      <a href="#form">записаться</a>
+                      <a class="scroll-button">записаться</a>
+                      <script src="Scroll.js"></script>
                     </div>
                   </div>
                   <div class="content">
@@ -373,7 +375,7 @@
                         </div>
                       </div>
                     </div>                                                          
-                    <div class="form" id="form">
+                    <div class="form" id="target-section">
                       <ul class="tab-group" >
                         <li class="tab active"><a href="#tab1">Научно-техническое направление</a></li>
                         <li class="tab"><a href="#tab2">Научно-техническое направление</a></li>
@@ -429,7 +431,7 @@
                     <script src="script.js"></script>
                     <link rel="stylesheet" href="kargoo.ddu/instagram_news.css">
                     <section class="news" style="margin-bottom: -1rem" id="news">
-                      <h1 class="text-right-alignment lang-h-one-news">News and Events</h1>
+                      <h1 class="bold-text">News and Events</h1>
                       <!-- LightWidget WIDGET -->
                       <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
                       <iframe src="//lightwidget.com/widgets/ac3726bcbaa35ec7b8ab82982d7a50a9.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
@@ -437,8 +439,8 @@
                     <div class="box3">
                       <div class="Vacancies">
                         <div>
-                        <h1>Вакансии</h1>
-                        <p>а если я буду писать этот текст на русском</p>
+                        <h1 class="bold-text">Вакансии</h1>
+                        <p class="normal-text">а если я буду писать этот текст на русском</p>
                         </div>
                         <div class="docs-embed">
                           <iframe

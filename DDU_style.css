@@ -67,6 +67,79 @@ body {
 	display: flex;
 	justify-content: end;
 }
+.switch-button {
+	justify-content: right;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background: rgb(226, 205, 176);
+	border-radius: 30px;
+	overflow: hidden;
+	width: 240px;
+	text-align: center;
+	font-size: 2, 25rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: rgb(112, 87, 114);
+	position: relative;
+	padding-right: 120px;
+}
+
+.switch-button:before {
+	content: 'Казахский';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+	pointer-events: none;
+}
+
+.switch-button-checkbox {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 2;
+}
+
+.switch-button-checkbox:checked + .switch-button-label:before {
+	transform: translateX(120px);
+	transition: transform 300ms linear;
+}
+
+.switch-button-label {
+	position: relative;
+	padding: 15px 0;
+	display: block;
+	user-select: none;
+	pointer-events: none;
+}
+
+.switch-button-label:before {
+	content: '';
+	background: rgb(172, 139, 86);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 30px;
+	transform: translateX(0);
+	transition: transform 300ms;
+}
+
+.switch-button-label-span {
+	position: relative;
+}
 .general_content {
 	display: grid;
 	padding: 14rem;
@@ -75,12 +148,23 @@ body {
 	align-items: center;
 	color: rgb(112, 87, 114);
 }
-.general_content a {
-	color: #000000;
-	align-items: center;
-	border-radius: 1rem;
-	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.073);
+.button-for-info a {
+	color: rgb(106, 73, 255);
+	cursor: pointer;
 }
+.scroll-button {
+	color: rgb(106, 73, 255);
+	border: solid 0.1rem #3498db;
+	border-radius: 2rem;
+	margin: 1rem;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.scroll-button:hover {
+	background-color: #ddd;
+}
+
 .button-for-info {
 	margin-inline: auto;
 	width: fit-content;
